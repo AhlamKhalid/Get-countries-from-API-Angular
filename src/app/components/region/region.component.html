@@ -1,0 +1,51 @@
+<div class="radio-wrapper">
+  <h2 class="radio-header">Region</h2>
+  <div class="radio-container">
+    <input
+      id="rb1"
+      type="radio"
+      name="region"
+      value="all"
+      class="radio-input"
+      [(ngModel)]="region"
+      (change)="handleChange()"
+    />
+    <label for="rb1" class="radio-label"> All </label>
+  </div>
+  <div class="radio-container">
+    <input
+      id="rb2"
+      type="radio"
+      name="region"
+      value="asia"
+      class="radio-input"
+      [(ngModel)]="region"
+      (change)="handleChange()"
+    />
+    <label for="rb2" class="radio-label"> Asia </label>
+  </div>
+  <div class="radio-container">
+    <input
+      id="rb3"
+      type="radio"
+      name="region"
+      value="africa"
+      class="radio-input"
+      [(ngModel)]="region"
+      (change)="handleChange()"
+    />
+    <label for="rb3" class="radio-label"> Africa </label>
+  </div>
+  <div class="radio-container">
+    <input
+      id="rb4"
+      type="radio"
+      name="region"
+      value="europe"
+      class="radio-input"
+      [(ngModel)]="region"
+      (change)="handleChange()"
+    />
+    <label for="rb4" class="radio-label"> Europe </label>
+  </div>
+</div>

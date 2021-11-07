@@ -1,0 +1,12 @@
+<div class="container">
+  <h1 class="header">
+    <a href="https://restcountries.com/" target="_blank">Countries API</a>
+  </h1>
+  <!-- region radio -->
+  <app-region (changeRegion)="onChangeRegion($event)"></app-region>
+  <!-- countries or loading -->
+  <div *ngIf="isLoading; else countriesBlock" class="loading-circle"></div>
+  <ng-template #countriesBlock>
+    <app-countries [countries]="countries"></app-countries>
+  </ng-template>
+</div>

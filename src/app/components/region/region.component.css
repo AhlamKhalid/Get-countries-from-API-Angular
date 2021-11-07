@@ -1,0 +1,44 @@
+/* radio */
+.radio-wrapper {
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+}
+
+.radio-header {
+  font-size: 16px;
+  margin-right: 32px;
+}
+
+/* No special styling for radio inputs */
+.radio-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio-container {
+  margin-right: 16px;
+}
+
+.radio-input {
+  /* remove from document flow */
+  position: absolute;
+}
+
+.radio-label {
+  color: #78767a;
+  font-size: 14px;
+  font-weight: 700;
+  /* expands its parent */
+  display: inline-block;
+  padding: 2px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* direct sibling */
+.radio-input:checked + .radio-label {
+  color: #fff;
+  background-color: #0aaf6d;
+}
